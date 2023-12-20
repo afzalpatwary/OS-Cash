@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<!--[if gte IE 9] <style type="text/css"> .gradient {filter: none;}</style><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<html lang="zxx" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Required meta tags for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <meta name="misapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="@twitter_username">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="R">
+    <meta property="fb:admins" content="Facebook numeric ID">
+    <!-- gmail verification -->
+    <meta name="google-site-verification" content="">
+    <!-- Website title -->
+    <title>Income Calculator</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jQuery (necessary for jQuery plugins) -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Coding Start Here -->
+
+    <!-- page-wrapper -->
+    <div class="page-wrapper bg-green-gradient">
+
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-white-rgba py-3">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto py-4 py-lg-0">
+                            <li class="nav-item mx-lg-4 mb-3 mb-lg-0">
+                                <a class="text-clr-dark-2 fs-6 fw-bold text-decoration-none"
+                                    href="license-generator.html">
+                                    License generator
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-4 mb-3 mb-lg-0">
+                                <a class="text-clr-dark-2 fs-6 fw-bold text-decoration-none"
+                                    href="income-calculator.html">
+                                    Income calculator
+                                </a>
+                            </li>
+                            <li class="nav-item mx-lg-4 mb-3 mb-lg-0">
+                                <a class="text-clr-dark-2 fs-6 fw-bold text-decoration-none"
+                                    href="calculated-income-forecast.html">
+                                    Income forecast
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <a class="os-btn bg-clr-green fs-6 fw-bold rounded text-white py-2 px-4"
+                                href="license-generator.html">
+                                The License
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--/ header -->
+
+
+
+        <!-- calculator-area -->
+        <section class="calculator-area section-padding-120">
+            <div class="container">
+                <div class="section-heading text-center mb-5">
+                    <h1 class="fs-1 text-clr-dark">
+                        OS.Cash <b>License Income</b> Calculator
+                    </h1>
+                </div>
+                <div class="form-area p-48 bg-white rounded-4">
+                    <form action="#">
+                        <div class="form-field mb-48">
+                            <label for="projectName" class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                Project Name
+                            </label>
+                            <input type="text" class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                id="projectName" placeholder="Enter project name:">
+                        </div>
+                        <div class="form-field mb-48">
+                            <label for="projectUrl" class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                URL of Project Source Code (Github, Gitlab, SourceHut, etc)
+                            </label>
+                            <input type="text" class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                id="projectUrl" placeholder="https://git.kernel.org">
+                        </div>
+
+                        <div class="radio-buttons-wrap mb-48">
+                            <h6 class="fs-14 text-clr-dark fw-bold mb-3">
+                                Current license generally is:
+                            </h6>
+                            <div class="form-field radio-buttons d-flex gap-4 flex-wrap">
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="permissivelyLicensed">
+                                        <input class="form-check-input d-none" type="radio" name="currentlicense"
+                                            id="permissivelyLicensed" checked>
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Permissively Licensed (MIT, BSD, Apache)
+                                    </label>
+                                </div>
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="copyleftLicense">
+                                        <input class="form-check-input d-none" type="radio" name="currentlicense"
+                                            id="copyleftLicense">
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Copyleft License (GPL, MPL, EPL)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-field mb-48">
+                            <label for="primaryDomain" class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                Primary Domain Name
+                            </label>
+                            <input type="text" class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                id="primaryDomain" placeholder="Enter primary domain for project">
+                        </div>
+
+                        <!-- table-wrapper -->
+                        <div class="table-wrapper mb-48">
+                            <h6 class="fs-14 text-clr-dark fw-bold mb-3">
+                                Current license generally is:
+                            </h6>
+                            <div class="table-responsivs">
+                                <table class="table mb-0 border-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="bg-clr-green-light text-nowrap">
+                                                <div
+                                                    class="table-data green-border-left fs-6 text-clr-dark fw-bold text-center">
+                                                    Trademark Term
+                                                </div>
+                                            </th>
+                                            <th class="bg-clr-green-light text-nowrap">
+                                                <div
+                                                    class="table-data green-border-right fs-6 text-clr-dark fw-bold text-center">
+                                                    Country
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                <div class="table-data left border-top-0 fs-6 text-clr-dark fw-normal">
+                                                    Trademark
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap">
+                                                <div
+                                                    class="table-data right border-top-0 border-start-0  text-clr-dark fw-normal">
+                                                    USA
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-nowrap">
+                                                <div class="table-data left border-top-0 rl-12 text-clr-dark fw-normal">
+                                                    Otto
+                                                </div>
+                                            </td>
+                                            <td class="text-nowrap">
+                                                <div
+                                                    class="table-data right border-top-0 border-start-0 rr-12 text-clr-dark fw-normal">
+                                                    Canada
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- table-wrapper -end -->
+
+                        <div class="form-field mb-48">
+                            <label for="numberUsers" class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                Number of known Billion Dollar Business Users
+                            </label>
+                            <p class="fs-14 fw-normal text-clr-dark-2 mb-3">
+                                Subtitle: For most software, there will be more users that you're personally aware of.
+                                Your best guess for the total
+                                number of Billion Dollar Businesses
+                                that rely on your software
+                            </p>
+                            <input type="number"
+                                class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                id="numberUsers" placeholder="Number of users">
+                        </div>
+
+                        <div class="form-field mb-48">
+                            <label for="businessUsers" class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                Estimated Total number of Billion Dollar Business Users:
+                            </label>
+                            <p class="fs-14 fw-normal text-clr-dark-2 mb-3">
+                                For most software, there will be more users that you're personally aware of. Your best
+                                guess for the total number of
+                                Billion Dollar Businesses that rely on your software
+                            </p>
+                            <input type="number"
+                                class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                id="businessUsers" placeholder="Number of users">
+                        </div>
+
+                        <!-- upgrade-value -->
+                        <div class="upgrade-value mb-48">
+                            <div class="border-bottom mb-4">
+                                <h3 class="fs-5 text-clr-dark fw-bold">
+                                    Upgrade Value Proposition
+                                </h3>
+                                <p class="fs-14 fw-normal text-clr-dark-2 mb-3">
+                                    Your ability to add value via
+                                </p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <label for="maintenance"
+                                            class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                            Maintenance:
+                                        </label>
+                                        <input type="number"
+                                            class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                            id="maintenance" placeholder="$ - $$$$$">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                            Enjoyment Desirability
+                                        </h6>
+                                        <div
+                                            class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-4 gap-2">
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji1.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji2.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji3.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji4.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji5.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                            Security
+                                        </h6>
+                                        <div
+                                            class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-4 gap-2">
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/yellow-emoji.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/yellow-emoji.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/yellow-emoji.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/yellow-emoji.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/yellow-emoji.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                            Enjoyment Desirability
+                                        </h6>
+                                        <div
+                                            class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-4 gap-2">
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji1.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji2.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji3.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji4.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji5.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <label for="stability"
+                                            class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                            Stability and Bug Fixes
+                                        </label>
+                                        <input type="number"
+                                            class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                            id="stability" placeholder="$ - $$$$$">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                            Enjoyment Desirability
+                                        </h6>
+                                        <div
+                                            class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-4 gap-2">
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji1.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji2.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji3.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji4.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji5.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <label for="stability"
+                                            class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                            Features (Especially enterprise features)
+                                        </label>
+                                        <input type="number"
+                                            class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                            id="stability" placeholder="$ - $$$$$">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-field mb-4">
+                                        <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                            Enjoyment Desirability
+                                        </h6>
+                                        <div
+                                            class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-4 gap-2">
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji1.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji2.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji3.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji4.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                            <button type="button" class="border-0 bg-transparent p-0">
+                                                <img src="assets/img/emoji5.svg" alt="icon" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- upgrade-value -end -->
+
+                        <!-- alternatives -->
+                        <div class="alternatives mb-48">
+                            <div class="border-bottom mb-4">
+                                <h3 class="fs-5 text-clr-dark fw-bold pb-2">
+                                    Most Likely Alternatives
+                                </h3>
+                            </div>
+
+                            <div class="alternative-rattings">
+
+                                <div class="form-field mb-4">
+                                    <label for="replacement"
+                                        class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                        URL of possible replacement
+                                    </label>
+                                    <input type="text"
+                                        class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                        id="replacement" placeholder="https://replacmentsprogram/">
+                                </div>
+
+                                <!-- Rating Stars Box -->
+                                <div class='form-field rating-stars mb-4'>
+                                    <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                        Replacement Quality
+                                    </h6>
+                                    <ul id='stars'
+                                        class="form-control h-56 px-3 list-unstyled radius-12 mb-0 d-flex align-items-center gap-2">
+                                        <li class='star selected' title='Poor' data-value='1'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star selected' title='Fair' data-value='2'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star selected' title='Good' data-value='3'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star' title='Excellent' data-value='4'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star' title='WOW!!!' data-value='5'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Rating Stars Box -end -->
+
+                                <div class="form-field mb-4">
+                                    <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                        Replacement Desirability
+                                    </h6>
+                                    <div
+                                        class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-2 gap-1 justify-content-lg-center">
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Angry</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji5.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Gaze</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji4.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Happy</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji3.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Chill</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji2.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Smile</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji1.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="alternatives-cost">
+                                    <div class="form-field mb-4">
+                                        <label for="replacementCost"
+                                            class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                            Replacement Cost / month
+                                        </label>
+                                        <input type="number"
+                                            class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-3 text-end"
+                                            id="replacementCost" placeholder="0 - 1000">
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn border-0 p-0">
+                                    <img src="assets/img/delete-icon.svg" alt="icon" class="img-fluid">
+                                </button>
+
+                            </div>
+                            <div class="alternative-rattings">
+
+                                <div class="form-field mb-4">
+                                    <label for="replacement2"
+                                        class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                        URL of possible replacement
+                                    </label>
+                                    <input type="text"
+                                        class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                        id="replacement2" placeholder="https://replacmentsprogram/">
+                                </div>
+
+                                <!-- Rating Stars Box -->
+                                <div class='form-field rating-stars mb-4'>
+                                    <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                        Replacement Quality
+                                    </h6>
+                                    <ul id='stars'
+                                        class="form-control h-56 px-3 radius-12 list-unstyled mb-0 d-flex align-items-center gap-2">
+                                        <li class='star selected' title='Poor' data-value='1'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star selected' title='Fair' data-value='2'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star selected' title='Good' data-value='3'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star' title='Excellent' data-value='4'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                        <li class='star' title='WOW!!!' data-value='5'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.4675 23.319L12.0005 17.831L4.5335 23.319L7.4005 14.456L-0.0625 9.003H9.1515L12.0005 0.125L14.8495 9.003H24.0625L16.6005 14.456L19.4675 23.319Z"
+                                                    fill="#656D76" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Rating Stars Box -end -->
+
+                                <div class="form-field mb-4">
+                                    <h6 class="fs-14 text-clr-dark fw-bold pb-2">
+                                        Replacement Desirability
+                                    </h6>
+                                    <div
+                                        class="emoji-ratting form-control radius-12 h-56 d-flex align-items-center px-2 gap-1 justify-content-lg-center">
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Angry</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji5.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Gaze</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji4.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Happy</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji3.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Chill</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji2.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                        <button type="button"
+                                            class="emoji-with-toltip position-relative border-0 bg-transparent p-0">
+                                            <span class="toltip-text position-absolute start-0 end-0">Smile</span>
+                                            <span class="emoji-icon">
+                                                <img src="assets/img/emoji1.svg" alt="icon" class="img-fluid">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="alternatives-cost">
+                                    <div class="form-field mb-4">
+                                        <label for="replacementCost"
+                                            class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                            Replacement Cost / month
+                                        </label>
+                                        <input type="number"
+                                            class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-3 text-end"
+                                            id="replacementCost" placeholder="0 - 1000">
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn border-0 p-0">
+                                    <img src="assets/img/delete-icon.svg" alt="icon" class="img-fluid">
+                                </button>
+
+                            </div>
+
+                            <button type="button" id="replacement"
+                                class="os-btn fs-6 fw-bold text-clr-green bg-clr-green-light2 h-56 green-dashed-border radius-12 d-flex gap-3 align-items-center justify-content-center w-100">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="9" width="16" height="2" fill="#248F37" />
+                                    <rect x="9" y="18" width="16" height="2" transform="rotate(-90 9 18)"
+                                        fill="#248F37" />
+                                </svg>
+                                Add possible replacement
+                            </button>
+                        </div>
+                        <!-- alternatives -end -->
+
+                        <div class="radio-buttons-wrap mb-48">
+                            <div class="border-bottom mb-4">
+                                <h3 class="fs-5 text-clr-dark fw-bold pb-2">
+                                    About Me
+                                </h3>
+                            </div>
+                            <h6 class="fs-14 text-clr-dark fw-bold mb-3">
+                                Your role in this project
+                            </h6>
+                            <div class="form-field radio-buttons d-flex gap-4 flex-wrap">
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="projectLeader">
+                                        <input class="form-check-input d-none" type="radio" name="check"
+                                            id="projectLeader" checked>
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Project Leader
+                                    </label>
+                                </div>
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="coreTeam">
+                                        <input class="form-check-input d-none" type="radio" name="check" id="coreTeam">
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Core Team
+                                    </label>
+                                </div>
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="contributor">
+                                        <input class="form-check-input d-none" type="radio" name="check"
+                                            id="contributor">
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Contributor
+                                    </label>
+                                </div>
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="billionDollar">
+                                        <input class="form-check-input d-none" type="radio" name="check"
+                                            id="billionDollar">
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Billion Dollar Business User
+                                    </label>
+                                </div>
+                                <div class="form-check ps-0">
+                                    <label
+                                        class="form-check-label text-clr-dark-2 fs-16 fw-normal d-flex gap-2 align-items-center"
+                                        for="otherUser">
+                                        <input class="form-check-input d-none" type="radio" name="check" id="otherUser">
+                                        <span class="normal-circle"></span>
+                                        <span class="active-circle">
+                                            <b class="active-inner-circle"></b>
+                                        </span>
+                                        Other User
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-field mb-4">
+                            <label for="projectName" class="form-label d-block fs-14 text-clr-dark fw-bold pb-1">
+                                Email Address
+                            </label>
+                            <input type="email" class="form-control radius-12 text-clr-dark-2 fs-16 fw-normal h-56 px-4"
+                                id="projectName" placeholder="Enter your email address">
+                        </div>
+
+                        <button type="button" id="estimateEarning"
+                            class="os-btn fs-6 fw-bold text-white bg-clr-green h-56 radius-12 green-dashed-border d-flex gap-3 align-items-center justify-content-center w-100">
+                            Estimate your earning
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                fill="none">
+                                <path
+                                    d="M9.94902 16.124L16.0331 9.11406C16.0795 9.06025 16.1055 8.9916 16.1055 8.91924L16.1055 7.27715C16.1055 7.13984 15.9348 7.07676 15.8457 7.18066L10.2051 13.6785L10.2051 2.82031C10.2051 2.73867 10.1383 2.67187 10.0566 2.67187L8.94336 2.67187C8.86172 2.67187 8.79492 2.73867 8.79492 2.82031L8.79492 13.6767L3.1543 7.17881C3.06338 7.0749 2.89453 7.13799 2.89453 7.27529L2.89453 8.97305C2.89453 9.0083 2.90752 9.04355 2.93164 9.06953L9.05098 16.124C9.10683 16.1883 9.17582 16.2398 9.25328 16.2751C9.33074 16.3103 9.41488 16.3286 9.5 16.3286C9.58512 16.3286 9.66925 16.3103 9.74672 16.2751C9.82418 16.2398 9.89317 16.1883 9.94902 16.124Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- calculator-area -end -->
+
+
+        <!-- common-block -->
+        <section class="common-block section-padding-120 bg-clr-green-light">
+            <div class="container">
+                <div class="row bg-white radius-12 px-4 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="block-img text-center mb-4 mb-lg-0 text-lg-start">
+                            <img src="assets/img/common-block-img.png" alt="image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="block-info py-5 my-4">
+                            <h3 class="fs-30 fw-bold text-clr-dark lh-base mb-3">
+                                Do you want to write great code or run a business?
+                            </h3>
+                            <p class="fs-18 text-clr-dark-2 lh-base fw-normal mb-4">
+                                If writing code makes you happier than negotiating contracts, taking sales calls,
+                                chasing down late payments, or the
+                                hundred of other procedures that that are involved in operating a software licensing
+                                business, we have a turn-key
+                                service to do it all for you.
+                            </p>
+                            <p class="fs-18 fw-bold text-clr-green lh-base mb-5">
+                                We charge 30% initially, but the bigger your business gets, the lower our fee
+                                percentage.
+                            </p>
+
+                            <a href="#" class="os-btn fs-6 fw-bold text-white bg-clr-green radius-12 py-3 px-4">
+                                OS.Cash Butler
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                    fill="none">
+                                    <path
+                                        d="M16.124 9.04707L9.11406 2.96299C9.06025 2.9166 8.9916 2.89062 8.91924 2.89062H7.27715C7.13984 2.89062 7.07676 3.06133 7.18066 3.15039L13.6785 8.79102H2.82031C2.73867 8.79102 2.67188 8.85781 2.67188 8.93945V10.0527C2.67188 10.1344 2.73867 10.2012 2.82031 10.2012H13.6767L7.17881 15.8418C7.0749 15.9327 7.13799 16.1016 7.27529 16.1016H8.97305C9.0083 16.1016 9.04355 16.0886 9.06953 16.0645L16.124 9.94512C16.1883 9.88926 16.2398 9.82027 16.2751 9.74281C16.3103 9.66535 16.3286 9.58122 16.3286 9.49609C16.3286 9.41097 16.3103 9.32684 16.2751 9.24938C16.2398 9.17192 16.1883 9.10293 16.124 9.04707Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- common-block -end -->
+
+    </div>
+    <!-- page-wrapper -end -->
+
+
+    <!-- footer -->
+    <footer class="footer-area pt-100 bg-clr-dark">
+        <div class="container">
+            <div class="footer-top pb-5">
+                <ul
+                    class="contact-list list-unstyled mb-0 d-flex gap-4 flex-wrap flex-lg-nowrap justify-content-lg-between">
+                    <li class="list-item w-100">
+                        <a href="mailto:questions@os.cash"
+                            class="border-1-dark3 text-white d-flex justify-content-between text-decoration-none fs-6 fw-bold py-2 px-4 w-100 radius-12 h-100">
+                            <span class="d-flex gap-3 align-items-center">
+                                <img src="assets/img/email.svg" alt="icon" class="img-fluid">
+                                questions@os.cash
+                            </span>
+                            <img src="assets/img/arrow-right.svg" alt="icon" class="right-arrow img-fluid">
+                        </a>
+                        <p class="note pt-1 mb-0 text-clr-gray fs-12 text-end">
+                            we'll respond within 24 hours
+                        </p>
+                    </li>
+                    <li class="list-item w-100">
+                        <a href="#"
+                            class="border-1-dark3 text-white d-flex justify-content-between text-decoration-none fs-6 fw-bold py-2 px-4 w-100 radius-12 h-100">
+                            <span class="d-flex gap-3 align-items-center">
+                                <img src="assets/img/video-camera.svg" alt="icon" class="img-fluid">
+                                schedule a video call with our <br> chief council
+                            </span>
+                            <img src="assets/img/arrow-right.svg" alt="icon" class="right-arrow img-fluid">
+                        </a>
+                    </li>
+                    <li class="list-item w-100">
+                        <a href="#"
+                            class="border-1-dark3 text-white d-flex justify-content-between text-decoration-none fs-6 fw-bold py-2 px-4 w-100 radius-12 h-100">
+                            <span class="d-flex gap-3 align-items-center">
+                                <img src="assets/img/linkdn.svg" alt="icon" class="img-fluid">
+                                Our founder on LinkedIn
+                            </span>
+                            <img src="assets/img/arrow-right.svg" alt="icon" class="right-arrow img-fluid">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-widget-area pt-4 pb-70">
+                <div class="row gx-lg-5">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="widget mb-4 mb-md-0">
+                            <a href="index.html" class="d-block mb-4">
+                                <img src="assets/img/logo-footer.svg" alt="footer logo" class="img-fluid">
+                            </a>
+                            <p class="fs-18 fw-normal text-clr-gray mb-4">
+                                Making it easy for billion dollar businesses to fund the software they rely on.
+                            </p>
+                            <p class="fs-18 fw-normal text-clr-gray">
+                                Making it easy for developers to focus on great software while earning enterprise
+                                software licensing income.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-2 col-md-6">
+                        <div class="widget mb-4 mb-md-0">
+                            <h4 class="widget-title fs-18 fw-bold text-white lh-base mb-4">
+                                Navigation
+                            </h4>
+                            <ul class="footer-menu-list list-unstyled mb-0">
+                                <li class="mb-3">
+                                    <a href="#" class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        Mission
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="license-generator.html"
+                                        class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        License Store
+                                    </a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="calculated-income-forecast.html"
+                                        class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        Report Piracy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-2 col-md-6">
+                        <div class="widget">
+                            <h4 class="widget-title fs-18 fw-bold text-white lh-base mb-4">
+                                Navigation
+                            </h4>
+                            <ul class="footer-menu-list list-unstyled mb-0">
+                                <li class="mb-3">
+                                    <a href="income-calculator.html"
+                                        class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        Income Calculator
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="license-generator.html"
+                                        class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        License Generator
+                                    </a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="calculated-income-forecast.html"
+                                        class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                        OS.Cash Butler
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright py-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="fs-6 fw-normal text-clr-gray mb-3 mb-lg-0 text-center text-lg-start">
+                            Copyright © 2023 <a href="#" class="copyright-link fw-bold text-decoration-none">OS Cash
+                                LLC.</a> All
+                            rights reserved
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul
+                            class="footer-menu-list list-unstyled mb-0 d-flex gap-2 gap-lg-4 flex-wrap align-items-center justify-content-center justify-content-lg-end">
+                            <li class="">
+                                <a href="#" class="text-clr-gray fs-6 fw-normal text-decoration-none">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="text-clr-gray fs-6 fw-normal text-decoration-none d-flex gap-2 gap-lg-4">
+                                    <img src="assets/img/dot-icon.svg" alt="icon" class="img-fluid">
+                                    Terms of Use
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="text-clr-gray fs-6 fw-normal text-decoration-none d-flex gap-2 gap-lg-4">
+                                    <img src="assets/img/dot-icon.svg" alt="icon" class="img-fluid">
+                                    Accessibility Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -end -->
+
+
+
+
+
+    <!-- Main Coding End -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/five-star-ratting.js"></script>
+    <!-- Script JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- <h1 class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="300ms">
+        Hello
+    </h1> -->
+</body>
+
+</html>
